@@ -1,0 +1,203 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 170px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 170px;
+    width: 0;
+    height: 100%;
+    margin-left: -170px;
+    overflow-y: auto;
+    background: #404040;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 170px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -170px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 170px;
+    margin: 0;
+    padding: 20px;
+    list-style: none;
+}
+
+.more-categories, .more-deals {
+    list-style: none;
+    padding: 0;
+}
+
+.more-categories li, .more-deals li {
+    padding-top: 0px;
+    line-height: 18px;
+    display: -webkit-box;
+}
+
+/*Increase percentage to move to right*/
+
+.sidebar-nav li.categories-nav > a.collapsed{
+    background: url(../img/icon-plus-minus.png) 35% 16px no-repeat;
+    color: #CCD1D9;
+}
+
+.sidebar-nav li.categories-nav > a {
+    background: url(../img/icon-plus-minus.png) 35% -45px no-repeat;   
+    color: #37BC9B;
+    transition: none;
+}
+
+.sidebar-nav li.categories-nav > a.collapsed:hover {
+    background: url(../img/icon-plus-minus.png) 35% -14px no-repeat;  
+    color: #37BC9B; 
+}
+
+.sidebar-nav li.deals-nav > a.collapsed{
+    background: url(../img/icon-plus-minus.png) 35% 16px no-repeat;
+    color: #CCD1D9;
+}
+
+.sidebar-nav li.deals-nav > a {
+    background: url(../img/icon-plus-minus.png) 35% -45px no-repeat;   
+    color: #37BC9B;
+    transition: none;
+}
+
+.sidebar-nav li.deals-nav > a.collapsed:hover {
+    background: url(../img/icon-plus-minus.png) 35% -14px no-repeat;  
+    color: #37BC9B; 
+}
+
+/*End*/
+
+.sidebar-nav li {
+    line-height: 40px;
+}
+
+.sidebar-nav span {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.sidebar-nav li a, .more-categories li a, .logout-span {
+    display: block;
+    text-decoration: none;
+    color: #CCD1D9;
+    font-family: 'Open Sans Regular';
+    font-size: 14px;
+}
+
+.sidebar-nav li a:hover, .more-categories li a:hover, .more-deals li a:hover {
+    text-decoration: none;
+    color: #37BC9B!important;
+    transition: .1s ease-in-out;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 60px;
+    width: 170px;
+    position: absolute;
+    top:0;
+    left:0;
+    background: #37BC9B;
+    margin-bottom: 40px;
+}
+
+.sidebar-nav > .sidebar-brand a, .sidebar-nav > .sidebar-brand a:hover {
+    color: #fff!important;
+    font-size: 30px;
+}
+
+.small-nav {
+    height: 50px;
+    background-color: #404040;
+    padding: 10px;
+}
+
+.small-nav i {
+    color: #37BC9B;
+}
+
+.top-nav {
+    height: 60px;
+    background: #404040;
+    font-size: 16px;
+    color: #9B9B9B;
+    font-family: 'Open Sans Regular';
+    display: flex;
+    align-items: center;
+    padding: 25px;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 170px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 170px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+    .small-nav {
+        display: none;
+    }
+}

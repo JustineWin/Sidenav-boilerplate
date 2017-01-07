@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+
+    <title> My Site </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="css/jquery.mCustomScrollbar.min.css" rel="stylesheet"> -->
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/mycss.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand flex flex-center-center">
+                    <a href="index.html">
+                       My Site
+                    </a>
+                </li>
+                <li class="mt60">
+                    <a href="index.html" class="active-link">ITEM</a>
+                </li>
+                <li>
+                    <a href="products.html">ITEM</a>
+                </li>
+                <li class="categories-nav">
+                    <a href="#morecategories" data-toggle="collapse" class="collapsed">ITEM</a> 
+                        <ul id="morecategories" class="collapse more-categories">
+                            <li><a href="moods.html">SUB ITEM</a> </li>
+                            <li><a href="brands.html">SUB ITEM</a> </li>
+                        </ul>
+                </li>
+                <li class="deals-nav">
+                    <a href="#moredeals" data-toggle="collapse" class="collapsed">ITEM</a> 
+                        <ul id="moredeals" class="collapse more-deals">
+                            <li><a href="ads.html">SUB ITEM</a> </li>
+                            <li><a href="deals.html">SUB ITEM</a> </li>
+                        </ul>
+                </li>
+                <li>
+                    <a href="promocodes.html">ITEM</a>
+                </li>
+                <li>
+                    <a href="orders.html">ITEM</a>
+                </li>
+                <li>
+                    <a href="settings.html">ITEM</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="small-nav">
+            <img src="img/logo.png" class="pull-left" width="30" height="auto">
+            <a href="#menu-toggle" class="pull-right" id="menu-toggle"> <i class="fa fa-lg fa-navicon"> </i></a>
+        </div>
+
+        <div class="container-fluid container-body">
+            Content here bruhs.
+        </div>
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+
+    </script>
+
+</body>
+
+</html>
